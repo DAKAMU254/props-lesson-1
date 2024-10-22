@@ -1,0 +1,30 @@
+.card-container {
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-fill columns with a minimum width */
+  gap: 15px; /* Space between the cards */
+  padding: 20px; /* Padding around the container */
+}
+
+.card {
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  text-align: center; /* Center align text */
+  transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.car-image {
+  width: 100%; /* Image takes full width */
+  border-top-left-radius: 8px; /* Rounded top corners */
+  border-top-right-radius: 8px; /* Rounded top corners */
+}
+
+/* Responsive design for smaller screens - handled by grid gaps and auto-fill */
+@media (max-width: 600px) {
+  /* No specific styles needed here since we've set auto-fill in the grid */
+}
